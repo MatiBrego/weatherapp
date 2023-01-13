@@ -1,4 +1,4 @@
-Welcome to my Weather App. This is meant to be a simple Web App which I made to further my skills. 
+Welcome to my Weather App. This is meant to be a simple Web App which I made to further my programming skills. 
 
 It is particularly focused on using APIs to get information, in this case about the forecast for a given city. For that I used 7timer API (http://www.7timer.info/doc.php)
 and Forward and Reverse Geocoding Api from Rapid API (https://rapidapi.com/GeocodeSupport/api/forward-reverse-geocoding/).
