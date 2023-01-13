@@ -9,4 +9,4 @@ Instructions
 
   To run the app once downloaded, type 'npm run launch'. (You will need to install live-server package from npm -> https://www.npmjs.com/package/live-server)
   
-  Note: Please make sure to generate an add an Rapid API key for the geocoding API where it is indicated in src/Geocoder.ts file.
+  Note: Please make sure to generate and add a Rapid API key for the geocoding API where it is indicated in src/Geocoder.ts file.
