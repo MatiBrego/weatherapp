@@ -1,3 +1,6 @@
+/**
+ * Class representing the forcast for a single day.
+ */
 export class ForecastDay {
     maxTemp;
     minTemp;
@@ -9,6 +12,11 @@ export class ForecastDay {
         this.weather = weather;
         this.date = date;
     }
+    /**
+     * Gathers all data and returns a way of displaying it in html code.
+     *
+     * @returns A string with the html code.
+     */
     display() {
         return "<div>" +
             this.getDay() + " " +
@@ -17,6 +25,9 @@ export class ForecastDay {
             this.weather
             + "</div>";
     }
+    /**
+     * @returns A string with the day of the whole date.
+     */
     getDay() {
         return this.date.toString().substring(6);
     }

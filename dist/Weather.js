@@ -7,12 +7,19 @@ export class Weather {
      * @param cityInput
      * @param countryInput
      *
-     * @returns Promise with Json file
+     * @returns Promise with a list of Json files containing forecast information
      */
     weatherByAdress(cityInput, countryInput) {
         //Get the promise of the coordinates response object and run the makeRequest() function
         return this.geo.search_by_address(cityInput, countryInput).then(this.makeRequest);
     }
+    /**
+     * Calls the weather api to get forecasts for the next few days
+     *
+     * @param coords are the coordinates obtained by the Geocoder, passed as a promise
+     *
+     * @returns Promise with a list of Json files containing forecast information
+     */
     makeRequest(coords) {
         let url = 'http://www.7timer.info/bin/civillight.php?';
         let params = new URLSearchParams({
@@ -26,10 +33,4 @@ export class Weather {
         return fetch(url += params).then((response) => { return response.json(); });
     }
 }
-// let weather = new Weather();
-// function print(data:JSON){
-//     let date:number = data['dataseries'][0]['date'].toString().substring(6);
-//     console.log(date)
-// }
-// weather.weatherByAdress('London', 'UK').then(print)
 //# sourceMappingURL=Weather.js.map
