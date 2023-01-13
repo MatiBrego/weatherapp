@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <div style="padding-left: 20px;" action="main.js">
+        <h1>Weather Forecast</h1>
+        <div>
+            <form style="padding-left: 40px; display: flex;" >
+                <div>
+                <label for="location-city">Enter City</label><br>
+                <input type="text" name="location-city" id="location-city">
+                </div>
+
+                <div style="padding-left: 40px;">
+                <label for="location-country">Enter Country</label><br>
+                <input type="text" name="location-country" id="location-country">
+                </div>
+
+                <div style="padding-left:20px; ">
+                    <br>
+                <button name="next-button" type="button">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <p id="l"></p>
+    <script type="module" src="dist\index.js"></script>
+</body>
+</html>
