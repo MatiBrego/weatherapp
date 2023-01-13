@@ -9,7 +9,7 @@ export class Geocoder {
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '',
+                'X-RapidAPI-Key': '1234',
                 'X-RapidAPI-Host': 'forward-reverse-geocoding.p.rapidapi.com'
             },
         };
