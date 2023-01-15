@@ -9,13 +9,13 @@ function display(){
 
     forecasts.then((data: JSON) => {
         let i = 0;
-        document.getElementById("l").innerHTML = '';
+        document.getElementById("list").innerHTML = '';
         while(data["dataseries"][i] != undefined){
             let f = new ForecastDay(data['dataseries'][i]["temp2m"]["max"], 
                                     data['dataseries'][i]["temp2m"]["min"], 
                                     data['dataseries'][i]["weather"],
                                     data['dataseries'][i]["date"]);
-            document.getElementById("l").innerHTML += f.display();
+            document.getElementById("list").innerHTML += f.display();
             i += 1;
         }
     })

@@ -1,3 +1,4 @@
+import { imgs } from "./ImageGetter.js";
 
 /**
  * Class representing the forcast for a single day.
@@ -21,11 +22,11 @@ export class ForecastDay{
      * @returns A string with the html code.
      */
     display(): string {
-        return "<div>"+ 
+        return "<div style='padding-left: 20px'>"+ 
             this.getDay() + " " +
-            this.maxTemp.toString() + " " +
-            this.minTemp.toString() + " " +
-            this.weather
+            " Max:" + this.maxTemp.toString() + "° " +
+            " Min:" + this.minTemp.toString() + "° " +
+            '<img src=' + imgs.get(this.weather)+' alt='+this.weather+'>'
         + "</div>";
     }
 
