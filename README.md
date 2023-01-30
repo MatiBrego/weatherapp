@@ -5,7 +5,7 @@ and Forward and Reverse Geocoding Api from Rapid API (https://rapidapi.com/Geoco
 
 I also made it using Typescript in an attempt to improve my knowledge of this language and of Javascript concepts in general.
 
-<u>Instructions<u/>
+<u>Instructions</u>
 
   To run the app once downloaded, type 'npm run launch'. (You will need to install live-server package from npm -> https://www.npmjs.com/package/live-server)
   
