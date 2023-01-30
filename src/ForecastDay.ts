@@ -24,7 +24,7 @@ export class ForecastDay{
     display(): string {
         return "<div style='padding-left: 20px'>"+ 
             this.getDay() + " " +
-            " Max:" + this.maxTemp.toString() + "° " +
+            "<b> Max:" + this.maxTemp.toString() + "° </b>" +
             " Min:" + this.minTemp.toString() + "° " +
             '<img src=' + imgs.get(this.weather)+' alt='+this.weather+'>'
         + "</div>";
