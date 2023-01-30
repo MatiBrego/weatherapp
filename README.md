@@ -12,4 +12,4 @@ Instructions
   Note: Please make sure to generate and add a Rapid API key for the geocoding API where it is indicated in src/Geocoder.ts file. After that, compile the the file to js.
   
   
-   > <img src= ReadMeImgs/Pic1.png? width=50% height=50%> <img src= ReadMeImgs/Pic2.png? width=50% height=50%>
+   > <img src= ReadMeImgs/Pic1.png? width=70% height=70%> <img src= ReadMeImgs/Pic2.png? width=70% height=70%>
