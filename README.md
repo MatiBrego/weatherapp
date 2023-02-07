@@ -7,7 +7,7 @@ and Forward and Reverse Geocoding Api from Rapid API (https://rapidapi.com/Geoco
 
 I also made it using Typescript in an attempt to improve my knowledge of this language and of Javascript concepts in general.
 
-<u>Update</u>: I added the React framework and refactored code to improve ease of use and read. 
+<u>Update</u>: I added the React framework and refactored the code to improve ease of use and read. 
 
 ##Instructions
 
