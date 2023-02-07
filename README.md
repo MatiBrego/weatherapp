@@ -1,4 +1,4 @@
-##Weather App
+## Weather App
 
 Welcome to my Weather App. This is meant to be a simple Web App which I made to further my programming skills. 
 
@@ -7,9 +7,9 @@ and Forward and Reverse Geocoding Api from Rapid API (https://rapidapi.com/Geoco
 
 I also made it using Typescript in an attempt to improve my knowledge of this language and of Javascript concepts in general.
 
-<u>Update</u>: I added the React framework and refactored the code to improve ease of use and read. 
+Update: I added the React framework and refactored the code to improve ease of use and read. 
 
-##Instructions
+## Instructions
 
   To run the app once downloaded, type 'npm start'.
   
