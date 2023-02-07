@@ -1,4 +1,4 @@
-import { Geocoder } from "./Geocoder.js";
+import { Geocoder } from "./Geocoder";
 
 export class Weather {
 
@@ -26,7 +26,7 @@ export class Weather {
      * 
      * @returns Promise with a list of Json files containing forecast information
      */
-    private makeRequest(coords: JSON): Promise<JSON>{
+    private makeRequest(coords: any): Promise<JSON>{
 
         let url = 'http://www.7timer.info/bin/civillight.php?';
 

@@ -1,5 +1,3 @@
-import { imgs } from "./ImageGetter.js";
-
 /**
  * Class representing the forcast for a single day.
  */
@@ -17,23 +15,21 @@ export class ForecastDay{
     }
 
     /**
-     * Gathers all data and returns a way of displaying it in html code.
-     * 
-     * @returns A string with the html code.
-     */
-    display(): string {
-        return "<div style='padding-left: 20px'>"+ 
-            this.getDay() + " " +
-            "<b> Max:" + this.maxTemp.toString() + "° </b>" +
-            " Min:" + this.minTemp.toString() + "° " +
-            '<img src=' + imgs.get(this.weather)+' alt='+this.weather+'>'
-        + "</div>";
-    }
-
-    /**
-     * @returns A string with the day of the whole date.
+     * @returns A string with the day number of the month.
      */
     getDay(): string{
         return this.date.toString().substring(6);
+    }
+
+    getMaxTemp(): string{
+        return this.maxTemp.toString();
+    }
+
+    getMinTemp(): string{
+        return this.minTemp.toString();
+    }
+
+    getWeather(): string{
+        return this.weather.toString();
     }
 }

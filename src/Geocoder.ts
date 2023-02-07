@@ -13,7 +13,7 @@ export class Geocoder{
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '', //You should generate your own Rapid Api key for the geocoding api to run this WebApp.
+                'X-RapidAPI-Key': '699ecb4593msh578b4fad7d5064ap17d66fjsn489a476f78b8', //You should generate your own Rapid Api key for the geocoding api to run this WebApp.
                 'X-RapidAPI-Host': 'forward-reverse-geocoding.p.rapidapi.com'
             },
         };

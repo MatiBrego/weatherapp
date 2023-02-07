@@ -1,0 +1,19 @@
+.app{
+    padding-left: 20px;
+}
+
+.header{
+    padding-top: 20px;
+}
+
+.search{
+    padding-left: 40px; padding-top: 20px; display: flex;
+}
+
+.second-box{
+    padding-left: 40px;
+}
+
+.button{
+    padding-left:20px;
+}
