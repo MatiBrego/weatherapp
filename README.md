@@ -1,4 +1,4 @@
-##Weather App
+## Weather App
 
 Welcome to my Weather App. This is meant to be a simple Web App which I made to further my programming skills. 
 
@@ -9,7 +9,7 @@ I also made it using Typescript in an attempt to improve my knowledge of this la
 
 Update: I added the React framework and refactored the code to improve ease of use and read. 
 
-##Instructions
+## Instructions
 
   To run the app once downloaded, type 'npm start'.
   
