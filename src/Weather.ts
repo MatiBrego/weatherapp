@@ -28,19 +28,25 @@ export class Weather {
      */
     private makeRequest(coords: any): Promise<JSON>{
 
-        let url = 'http://www.7timer.info/bin/civillight.php?';
+        let url = 'https://foreca-weather.p.rapidapi.com/forecast/daily/';
 
+        let lonlat: String =  coords[0]['lon']+','+ coords[0]['lat'];
 
         let params = new URLSearchParams({
-            lon : coords[0]['lon'],
-			lat: coords[0]['lat'],
-			ac: '0',
-			unit: 'metric',
-			output: 'json',
-			tzshift: '0'
+			tempunit: 'C',
+			periods: '7',
+			dataset: 'standard'
             })
 
-        return fetch(url += params).then((response: any) => {return response.json()})
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '699ecb4593msh578b4fad7d5064ap17d66fjsn489a476f78b8',
+                'X-RapidAPI-Host': 'foreca-weather.p.rapidapi.com'
+            }
+            };
+
+        return fetch(url + lonlat +'?' + params, options).then((response: any) => {return response.json()})
     }
 }
 

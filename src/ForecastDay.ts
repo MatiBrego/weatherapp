@@ -18,7 +18,7 @@ export class ForecastDay{
      * @returns A string with the day number of the month.
      */
     getDay(): string{
-        return this.date.toString().substring(6);
+        return this.date.toString().substring(8);
     }
 
     getMaxTemp(): string{

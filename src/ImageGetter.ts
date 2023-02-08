@@ -1,13 +1,42 @@
 export let imgs:Map<string, string> = new Map();
 
-imgs.set('clear', './resources/clear.png');
-imgs.set('pcloudy', './resources/pcloudy.png');
-imgs.set('mcloudy', './resources/pcloudy.png');
-imgs.set('cloudy', './resources/cloudy.png');
-imgs.set('lightrain', './resources/rain.png');
-imgs.set('rain', './resources/rain.png');
-imgs.set('ishower', './resources/rain.png');
-imgs.set('lightsnow', './resources/snow.png');
-imgs.set('snow', './resources/snow.png');
-imgs.set('ts', './resources/ts.png');
-imgs.set('tsrain', './resources/ts.png');
+imgs.set('d000', './resources/clear.png');
+imgs.set('d100', './resources/clear.png');
+
+imgs.set('d200', './resources/pcloudy.png');
+imgs.set('d300', './resources/pcloudy.png');
+
+imgs.set('d400', './resources/cloudy.png');
+imgs.set('d500', './resources/cloudy.png');
+imgs.set('d600', './resources/cloudy.png');
+
+imgs.set('d210', './resources/rain.png');
+imgs.set('d220', './resources/rain.png');
+imgs.set('d310', './resources/rain.png');
+imgs.set('d320', './resources/rain.png');
+imgs.set('d410', './resources/rain.png');
+imgs.set('d420', './resources/rain.png');
+imgs.set('d430', './resources/rain.png');
+
+imgs.set('d240', './resources/ts.png');
+imgs.set('d340', './resources/ts.png');
+imgs.set('d440', './resources/ts.png');
+
+imgs.set('d211', './resources/snow.png');
+imgs.set('d221', './resources/snow.png');
+imgs.set('d311', './resources/snow.png');
+imgs.set('d321', './resources/snow.png');
+imgs.set('d411', './resources/snow.png');
+imgs.set('d421', './resources/snow.png');
+imgs.set('d431', './resources/snow.png');
+
+imgs.set('d212', './resources/snow.png');
+imgs.set('d222', './resources/snow.png');
+imgs.set('d312', './resources/snow.png');
+imgs.set('d322', './resources/snow.png');
+imgs.set('d412', './resources/snow.png');
+imgs.set('d422', './resources/snow.png');
+imgs.set('d432', './resources/snow.png');
+
+
+

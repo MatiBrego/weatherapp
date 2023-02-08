@@ -65,11 +65,11 @@ export class App extends React.Component<{},{forecasts: ForecastDay[], city: str
     forecasts.then((data: any) => {
         let i = 0;
 
-        while(data["dataseries"][i] !== undefined){
-            let f = new ForecastDay(data['dataseries'][i]["temp2m"]["max"], 
-                                    data['dataseries'][i]["temp2m"]["min"], 
-                                    data['dataseries'][i]["weather"],
-                                    data['dataseries'][i]["date"]);
+        while(data["forecast"][i] !== undefined){
+            let f = new ForecastDay(data['forecast'][i]["maxTemp"], 
+                                    data['forecast'][i]["minTemp"], 
+                                    data['forecast'][i]["symbol"],
+                                    data['forecast'][i]["date"]);
 
             newForecasts.push(f);
             i += 1;
