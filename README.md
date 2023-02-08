@@ -9,4 +9,4 @@ I also made it using Typescript in an attempt to improve my knowledge of this la
 
 Update: I added the React framework and refactored the code. 
 
-Link for the Web App -> https://weather-app-mati.netlify.app/
+To try it, click the following link: https://weather-app-mati.netlify.app/
