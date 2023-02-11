@@ -1,15 +1,19 @@
 import React from "react";
+import { ForecastDay } from "./ForecastDay";
 import { imgs } from "./ImageGetter";
 
-export class ForecastDayComponent extends React.Component<{maxTemp: string, minTemp: string, weather: string, date: string}>{
+/**
+ * Given a ForecastDay object, renders its information
+ */
+export class ForecastDayComponent extends React.Component<{forecastDay: ForecastDay}>{
 
     render(){
         return(
         <div> 
-        {this.props.date} 
-        <b> Max: {this.props.maxTemp}° </b>
-        Min: {this.props.minTemp}°
-        <img src={process.env.PUBLIC_URL + imgs.get(this.props.weather)} alt={this.props.weather}/>
+        {this.props.forecastDay.getDay()}
+        <b> Max: {this.props.forecastDay.getMaxTemp()}° </b>
+        Min: {this.props.forecastDay.getMinTemp()}°
+        <img src={process.env.PUBLIC_URL + imgs.get(this.props.forecastDay.getWeather())} alt={this.props.forecastDay.getWeather()}/>
         </div>
         )
     }

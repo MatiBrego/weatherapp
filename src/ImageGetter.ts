@@ -1,3 +1,7 @@
+/**
+ * Map where the key represents the symbol (description) of the weather in a day, 
+ * and the value represents the path to the icon which describes that symbol.
+ */
 export let imgs:Map<string, string> = new Map();
 
 imgs.set('d000', './resources/clear.png');

@@ -21,14 +21,23 @@ export class ForecastDay{
         return this.date.toString().substring(8);
     }
 
+    /**
+     * @returns A string with the max temp of the day.
+     */
     getMaxTemp(): string{
         return this.maxTemp.toString();
     }
 
+    /**
+     * @returns A string with the min temp of the day.
+     */
     getMinTemp(): string{
         return this.minTemp.toString();
     }
 
+    /**
+     * @returns A string with the symbol (Description) of the weather.
+     */
     getWeather(): string{
         return this.weather.toString();
     }

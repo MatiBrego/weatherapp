@@ -57,6 +57,10 @@ export class App extends React.Component<{},{forecasts: ForecastDay[], city: str
     this.setState({country: e.target.value})
   }
 
+  /**
+   * Gets the weather data using a Weather object using the input information. 
+   * Then creates a list of ForecastDay objects and updates the state of the app with it.
+   */
   handleClick(){
     let forecasts:Promise<JSON> = this.weather.weatherByAdress(this.state.city, this.state.country);
 
@@ -78,9 +82,6 @@ export class App extends React.Component<{},{forecasts: ForecastDay[], city: str
         this.setState({forecasts: newForecasts})
       })
     }
-    
-
-    
   }
 
 export default App;
